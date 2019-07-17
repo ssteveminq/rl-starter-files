@@ -56,7 +56,7 @@ python3 -m scripts.train --algo ppo --env MiniGrid-DoorKey-5x5-v0 --model DoorKe
 2. Visualize agent's behavior:
 
 ```
-python3 -m scripts.visualize --env MiniGrid-DoorKey-5x5-v0 --model DoorKey
+python3 -m scripts.visualize --env MiniGrid-Active-Perception-12x12-v0 --model AC
 ```
 
 <p align="center"><img src="README-rsrc/visualize-doorkey.gif"></p>
@@ -117,7 +117,7 @@ These files are suited for [`gym-minigrid`](https://github.com/maximecb/gym-mini
 An example of use:
 
 ```bash
-python3 -m scripts.train --algo ppo --env MiniGrid-DoorKey-5x5-v0 --model DoorKey --save-interval 10 --frames 80000
+python3 -m scripts.train --algo ppo --env MiniGrid-Active-Perception-12x12-v0 --model AC --save-interval 10 --frames 80000
 ```
 
 The script loads the model in `storage/DoorKey` or creates it if it doesn't exist, then trains it with the PPO algorithm on the MiniGrid DoorKey environment, and saves it every 10 updates in `storage/DoorKey`. It stops after 80 000 frames.
